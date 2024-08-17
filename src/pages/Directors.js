@@ -5,7 +5,7 @@ const Directors = () => {
   const [directors, setDirectors] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/directors')
+    fetch('http://localhost:3000/directors')
       .then(response => response.json())
       .then(data => setDirectors(data));
   }, []);
